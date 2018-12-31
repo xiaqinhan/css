@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="3">
+    <style type="text/css">
+    #box-shadow {
+        position: relative;
+        background:white;
+        box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+        -moz-box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+        padding: 10px;
+        background:white;
+    }
+    #box-shadow img {
+        border: 1px solid #8a4419;
+        width: 100%;
+        border-style: inset;
+    }
+    #box-shadow::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+        -moz-box-shadow:0 15px 20px rgba(0,0,0,0.3);
+        width: 70%;
+        left: 15%;
+        height: 100px;
+        bottom: 0;
+    }
+	</style>
+</head>
+<body>
+    <div id="box-shadow">
+        <img src="rock600x400.jpg" alt="mountain" width="600" height="400">
+    </div>
+</body>
+</html>
+rock600x400.jpg 600 400 1px 2px 4px 0 0 0 0.5 10px 1px #8a4419 0 15px 20px 0 0 0 0.3 70% 15% 100px 
