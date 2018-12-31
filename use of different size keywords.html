@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="3">
+    <style type="text/css">
+    #gradient1 {
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        background-image: radial-gradient(closest-side at 60% 55%, red, yellow,black)
+    }
+    #gradient2 {
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        background-image: radial-gradient(farthest-side at 60% 55%, red,yellow,black);
+    }
+    #gradient3 {
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        background-image: radial-gradient(closest-corner at 60% 55%, red,yellow,black);
+    }
+    #gradient4 {
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        background-image: radial-gradient(farthest-corner at 60% 55%,red,yellow,black);
+    }
+	</style>
+</head>
+<body>
+    <h1>Radial Gradients - Different size keywords</h1>
+    <h2>closest-side:</h2>
+    <div id="gradient1"></div>
+    <h2>farthest-side:</h2>
+    <div id="gradient2"></div>
+    <h2>closest-corner:</h2>
+    <div id="gradient3"></div>
+    <h2>farthest-corner (default):</h2>
+    <div id="gradient4"></div>
+    <p><strong>Note: </strong>Internet Explorer 9 and earlier versions do not support gradients.</p>
+        
+
+
+
+
+
+      
+</body>
+</html>
+150px 150px 60% 55% 
