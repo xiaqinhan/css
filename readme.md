@@ -1,0 +1,1 @@
+This repository prupose is that practice my skills with css from website https://www.w3schools.com/css/css3_text_effects.asp
