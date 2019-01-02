@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="3">
+    <style type="text/css">
+    div {
+        height: 100px;
+        width: 100px;
+        transition: width 2s;
+        -webkit-transition: width 2s;
+        background-color: red;
+    }
+    div#div1 {
+        transition-timing-function: linear;
+        -webkit-transition-timing-function: linear;
+    }
+    div#div2 {
+        transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+    }
+    div#div3 {
+        transition-timing-function: ease-in;
+        -webkit-transition-timing-function: ease-in;
+    }
+    div#div4 {
+        transition-timing-function: ease-out;
+        -webkit-transition-timing-function: ease-out;
+    }
+    div#div5 {
+        transition-timing-function: ease-in-out;
+        -webkit-transition-timing-function: ease-in-out;
+    }
+    div:hover {
+        width: 300px;
+    }
+	</style>
+</head>
+<body>
+    <h1>The transition-timing-function Property</h1>
+    <p>Hover over the div elements below, to see the different speed curves:</p>
+    <div id="div1">linear</div><br>
+    <div id="div2">ease</div><br>
+    <div id="div3">ease-in</div><br>
+    <div id="div4">ease-out</div><br>
+    <div id="div5">ease-in-out</div><br>
+    <p><b>Note: </b>This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
+100px 100px 2s 300px 
