@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="30">
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            position: relative;
+            animation: example 5s infinite;
+            -webkit-animation: example 5s infinite;
+            font-weight: bold;
+        }
+        @keyframes example {
+            from {left: 0px;}
+            to {left: 300px;}
+        }
+        @-webkit-keyframes example {
+            from {left: 0px;}
+            to {left: 300px;}
+        }
+        div#div1 {
+            animation-timing-function: linear;
+            -webkit-animation-timing-function: linear;
+        }
+        div#div2 {
+            animation-timing-function: ease;
+            -webkit-animation-timing-function: ease;
+        }
+        div#div3 {
+            animation-timing-function: ease-in;
+            -webkit-animation-timing-function: ease-in;
+        }
+        div#div4 {
+            animation-timing-function: ease-out;
+            -webkit-animation-timing-function: ease-out;
+        }
+        div#div5 {
+            animation-timing-function: ease-in-out;
+            -webkit-animation-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <p><b>Note: </b>The animation-timing-funtion property is not supported in Internet Explorer 9 and earlier versions.</p>
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+        
+
+        
+        
+        
+        
+        
+        
+</body>
+</html>
+100px 50px 5s  300px

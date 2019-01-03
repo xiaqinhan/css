@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="10">
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-delay: -2s;
+            -webkit-animation-name: example;
+            -webkit-animation-duration: 4s;
+            -webkit-animation-delay: -2s;
+        }
+        @keyframes example {
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 200px; top: 0px;}
+            50% {background-color: blue; left: 200px; top: 200px;}
+            75% {background-color: green; left: 0px; top: 200px;}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+        @-webkit-keyframes example {
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 200px; top: 0px;}
+            50% {background-color: blue; left: 200px; top: 200px;}
+            75% {background-color: green; left: 0px; top: 200px;}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+        <p>Using negative values: Here, the animation will start as if it had already been playing for 2 seconds:</p>
+        <div></div>
+        <p><b>Note: </b>This example does not work in Internet Explorer 9 and earlier versions.</p>
+        
+
+        
+</body>
+</html>
+100px 100px 4s -2s 0% red 0px 0px 25% yellow 50% blue 75% green 100% red
