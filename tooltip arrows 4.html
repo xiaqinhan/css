@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="3">
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+        .tooltip .tooltiptext {
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            border-radius: 6px;
+            padding: 5px 0;
+            top:-5px;
+            right: 110%;
+            visibility: hidden;
+
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent black;
+        }
+
+    </style>
+</head>
+<body style="text-align:center;">
+<h1>Right Tooltip w/ Left Arrow</h1>
+    <div class="tooltip">Hover over me
+        <span class="tooltiptext">Tooltip text</span>
+
+    </div>    
+        
+
+
+
+
+</body>
+</html>
+<br>
+<br>
+<br>
+1px 120px #fff 6px 5px 0 -5px 110% 50% 100% -5px 5px
