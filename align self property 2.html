@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="3">
+    <style>
+        .flex-container {
+            display: flex;
+            height: 200px;
+            background-color: #f1f1f1;
+        }
+        .flex-container > div {
+            background-color: dodgerblue;
+            text-align: center;
+            width: 100px;
+            margin: 10px;
+            line-height: 75px;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head> 
+    <h1>The align-self Property</h1>
+    <p>The "align-self: flex-start;" aligns the selected flex item at the top of the container.</p>
+    <p>The "align-self: flex-end;" aligns the selected flex item at the bottom of the container.</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div style="align-self: flex-start;">2</div>
+        <div style="align-self: flex-end;">3</div>
+        <div>4</div>
+    </div>
+    <p>The align-self property overrides the align-items property of the container.</p>
+
+
+
+</body>
+</html>
+<br>
+<br>
+<br>
+ 200px #f1f1f1 100px 10px 75px 30px   

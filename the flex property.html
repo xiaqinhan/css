@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="3">
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: #f1f1f1;
+            align-items: stretch;
+        }
+        .flex-container > div {
+            text-align: center;
+            color: white;
+            background-color: dodgerblue;
+            width: 100px;
+            margin: 10px;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head> 
+    <h1>The flex Property</h1>
+    <p>Make the third flex item not growable (0), not shrinkable (0), and with an initial length of 200 pixels:</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex: 0 0 200px;">3</div>
+        <div>4</div>
+    </div>
+
+</body>
+</html>
+<br>
+<br>
+<br>
+0 0 200px #f1f1f1 100px 10px 75px 30px   
