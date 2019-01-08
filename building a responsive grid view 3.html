@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="3">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        [class*="col-"] {
+            padding: 15px;
+            float: left;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        html {
+            font-family: 'lucida sans', sans-serif;
+        }
+        .header {
+            background-color: #9933cc;
+            padding: 15px;
+            color: #ffffff;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            margin-bottom: 8px;
+            padding: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+    </style>
+</head> 
+<body>
+    <div class="header"><h1>Chania</h1></div>
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </div>
+        <div class="col-9">
+            <h1>The City</h1>
+            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+            <p>Resize the browser window to see how the content respond to the resizing.</p>
+        </div>      
+</body>
+</html>
+<br>
+<br>
+<br>
+1px 15px 8.33% 16.66% 25% 33.33% 41.66% 50% 58.33% 66.66% 75% 83.33% 91.66% 100% lucida sans sans-serif #9933cc #ffffff 15px 0 0 8px 7px #33b5e5 #ffffff 
+0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) #0099cc
