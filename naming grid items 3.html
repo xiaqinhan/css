@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="3">
+    <style>
+        .grid-container {
+            background-color: #2196f3;
+            display: grid;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-areas: 'header header header header header header' 'menu main main main right right' 'menu footer footer footer footer footer'
+        }
+        .item1 {grid-area: header;}
+        .item2 {grid-area: menu;}
+        .item3 {grid-area:main;}
+        .item4 {grid-area: right;}
+        .item5 {grid-area:footer;}
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px 0;
+            text-align: center;
+            font-size: 30px;
+        }
+        </style>
+</head> 
+<body>
+    <h1>The grid-column Property</h1>
+    <p>Use the grid-column property to specify where to place an item.</p>
+    <p>Item1 will start on column-line 1 and end on column-line 5:</p>
+    <div class="grid-container">
+        <div class="item1">header</div>
+        <div class="item2">menu</div>
+        <div class="item3">main</div>
+        <div class="item4">right</div>
+        <div class="item5">Footer</div>
+    </div>
+    
+    
+    
+</body>
+</html>
+<br>
+<br>
+<br>
+10px #2196F3 10px rgba(255,255,255,0.8) 20px 0 30px 
+

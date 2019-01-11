@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="3">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 10px;
+            background-color: #2196f3;
+            grid-template-columns: auto auto auto auto auto auto;
+            padding: 10px;
+        }
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px 0;
+            text-align: center;
+            font-size: 30px;
+        }
+        .item2 {
+            grid-column: 2 / span 3;
+        } 
+    </style>
+</head> 
+<body>
+    <h1>The grid-column Property</h1>
+    <p>Use the grid-column property to specify where to place an item.</p>
+    <p>Item1 will start on column-line 1 and end on column-line 5:</p>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+        <div class="item16">16</div>
+    </div>
+    
+    
+    
+</body>
+</html>
+<br>
+<br>
+<br>
+10px #2196F3 10px rgba(255,255,255,0.8) 20px 0 30px 
+
+h左,j下,k上,l右
+w：下一单词首位
+b：当前单词首位，前一单词首位
+e：单词末位
+gg：全文首行
+Shift+g：全文尾行
+27+Shift+g：文本第27行
+o：下方插入新一行
+Shift+o: 上方插入新一行
+x：删除后一字符
+Shift+x：删除前一字符
+dd：删除整行,同时复制
+de：删除后一单词,同时复制
+dw：删除后一单词和空格,同时复制
+u：还原上一个操作
+选定：使用v进入
+y：复制选定块
+yy：复制光标所在整行
+d：剪切选定块
+dd：剪切光标所在整行
+p：粘贴文本
+f+o：在当前行的光标之后查找字母o
+F+b：在当前行的光标之前查找字母b
+:/word：全文查找word。 按下:实际上是进入了Vim的命令模式。查找操作支持正则表达式。
+r+p：将光标之后的字符替换为字母p
+:s/word/replace：光标所在行的第一个word替换为replace。
+:%s/from/to/：全文查找from并替换为to。
+:1,50s/from/to/：在第1行和第50行之间（含）进行搜索和替换。:45s/from/to/表示仅仅在第45行进行搜索和替换。而1,$行号范围和%是等价的。
+:%s/from/to/g：全文查找from并替换为to,包含选项g的替换范围更广。？？
+:%s/from/to/gc：全文查找from并替换为to，替换时询问。可以选择y/n/a/q/l/^E/^Y：y表示同意当前替换；n表示不同意当前替换；a表示替换当前和后面的并且不再确认；q表示立即结束替换操作；l表示把当前的替换后结束替换操作；^E向上滚屏^Y向下滚屏，用来帮助查看前后内容以决定进行操作。
+执行Shell命令
+:!ls就等同于在Shell终端执行ls命令。
